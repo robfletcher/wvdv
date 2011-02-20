@@ -133,10 +133,11 @@ body.ready, .no-js body {
 }
 
 #container {
-	background: #fff url(../images/logo-bg.png) no-repeat 50% 10em;
+	background: #fff url(../images/logo-bg.png) no-repeat 5em 8em;
 	margin: 0 auto;
 	max-width: 940px;
 	min-height: 100%;
+	overflow: hidden;
 	position: relative;
 	
      -moz-border-radius: 1em; 
@@ -159,7 +160,7 @@ body.ready, .no-js body {
 /* header */
 
 header {
-	margin: 0 2em 1em;
+	padding: 0 2em;
 }
 
 header h1, header h2 {
@@ -201,11 +202,25 @@ header h2 {
 	text-align: right;
 }
 
-/* main body */
-
+/* content columns */
 #main {
-	margin: 2em 2em 0;
+	margin-bottom: 2em;
+	overflow: hidden;
 }
+
+.main-column, .sidebar {
+	float: left;
+}
+
+.main-column {
+	width: 70%;
+}
+
+.sidebar {
+	width: 30%;
+}
+
+/* main body */
 
 p {
 	margin-bottom: 1em;
@@ -218,11 +233,23 @@ p {
 }
 
 section {
-	margin-bottom: 2em;
+	margin: 2em;
 }
 
 #services ul {
 	font-size: 1.2307em;
+}
+
+/* right column */
+#contact {
+	background: #ccc;
+	padding: 1em;
+}
+
+#contact .street-address,
+#contact .region,
+#contact .postal-code {
+	display: block;
 }
 
 /* page footer */
@@ -260,7 +287,7 @@ footer p {
   
 }
 
-@media screen and (max-device-width: 480px) {
+@media screen and (max-width: 480px) {
 	#container {
 		margin: 0;
 
@@ -277,6 +304,11 @@ footer p {
 		margin: 0 auto;
 	}
   
+	.main-column, .sidebar {
+		float: none;
+		width: auto;
+	}
+	
 	footer {
 	     -moz-border-radius: 0; 
 	  -webkit-border-radius: 0; 
