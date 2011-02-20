@@ -1,0 +1,11 @@
+Designed & developed by: Rob Fletcher
+Contact: rob [at] energizedwork.com
+Twitter: @rfletcherEW
+Blog: http://adhockery.blogspot.com/
+From: London, UK
+
+/* SITE */
+Last update: 2011/02/20
+Language: English & Afrikaans
+Doctype: HTML5 with CSS3
+Tools: Textmate
