@@ -132,7 +132,6 @@ body.ready, .no-js body {
 	margin: 1em auto;
 	max-width: 940px;
 	min-height: 95%;
-	overflow: hidden;
 	position: relative;
 	
      -moz-border-radius: 1em; 
@@ -156,7 +155,6 @@ body.ready, .no-js body {
 
 header {
 	margin: 0 2em 1em;
-	white-space: nowrap;
 }
 
 header h1, header h2 {
@@ -193,6 +191,7 @@ header h2 {
 }
 
 .lang {
+	margin-bottom: 0.5em;
 	padding-top: 0.5em;
 	text-align: right;
 }
@@ -201,7 +200,6 @@ header h2 {
 
 #main {
 	margin: 2em 2em 0;
-	overflow: visible;
 }
 
 p {
@@ -228,7 +226,6 @@ footer {
 	background: #444;
 	bottom: 0;
 	color: #ddd;
-	overflow: hidden;
 	position: absolute;
 	width: 100%;
      -moz-border-radius: 0 0 1em 1em; 
@@ -258,8 +255,31 @@ footer p {
 }
 
 @media screen and (max-device-width: 480px) {
+	#container {
+		margin: 0;
+
+	     -moz-border-radius: 0; 
+	  -webkit-border-radius: 0; 
+	          border-radius: 0; 
+
+	     -moz-box-shadow: 0px 0px 0.5em #000033; 
+	  -webkit-box-shadow: 0px 0px 0.5em #000033; 
+	          box-shadow: 0px 0px 0.5em #000033; 
+	}
+	
+	header hgroup {
+		margin: 0 auto;
+	}
   
-  
+	footer {
+	     -moz-border-radius: 0; 
+	  -webkit-border-radius: 0; 
+	          border-radius: 0; 
+	}
+	
+	#copyright, #credit {
+		float: none;
+	}
   /* html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; } */
 }
 
