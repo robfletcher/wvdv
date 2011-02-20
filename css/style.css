@@ -120,6 +120,11 @@ body {
 	background-image: radial-gradient(center 45deg, circle closest-corner, #6666FF 0%, #191970 100%);
 	background-image: -moz-radial-gradient(center 45deg, circle closest-corner, #6666FF 0%, #191970 100%);
 	background-image: -webkit-gradient(radial, center center, 125, center center, 250, from(#6666FF), to(#191970));
+	visibility: hidden;
+}
+
+body.ready, .no-js body {
+	visibility: visible;
 }
 
 #container {

@@ -3,7 +3,7 @@
 */
 
 $(document).ready(function() {
-	// $('header').bigtext();
+	$('body').addClass('ready');
 });
 
 
