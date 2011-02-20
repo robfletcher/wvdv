@@ -127,6 +127,7 @@ body {
 	margin: 0 auto;
 	max-width: 940px;
 	min-height: 100%;
+	overflow: hidden;
      -moz-box-shadow: 0px -0.5em 0.5em #000; 
   -webkit-box-shadow: 0px 0px 1em #191970; 
           box-shadow: 0px 0px 1em #191970; 
@@ -188,7 +189,7 @@ header h2 {
 /* main body */
 
 #main {
-	margin: 2em;
+	margin: 2em 2em 0;
 }
 
 p {
@@ -196,8 +197,36 @@ p {
 }
 
 #main h2 {
+	font-family: 'DejaVuSansBook';
 	font-size: 2em;
 	margin: 1em 0 0.5em;
+}
+
+section {
+	margin-bottom: 2em;
+}
+
+#services ul {
+	font-size: 1.2307em;
+}
+
+/* page footer */
+
+footer {
+	color: #666;
+	overflow: hidden;
+}
+
+footer p {
+	font-size: 0.92307em;
+	margin: 1em 2em;
+}
+
+#copyright {
+	float: left;
+}
+#credit {
+	float: right;
 }
 
 
