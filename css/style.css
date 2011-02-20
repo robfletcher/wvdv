@@ -120,7 +120,12 @@ body {
 	background-image: radial-gradient(center 45deg, circle closest-corner, #6666FF 0%, #191970 100%);
 	background-image: -moz-radial-gradient(center 45deg, circle closest-corner, #6666FF 0%, #191970 100%);
 	background-image: -webkit-gradient(radial, center center, 125, center center, 250, from(#6666FF), to(#191970));
+	padding: 1em 0;
 	visibility: hidden;
+	
+	   -moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 }
 
 body.ready, .no-js body {
@@ -129,9 +134,9 @@ body.ready, .no-js body {
 
 #container {
 	background: #fff url(../images/logo-bg.png) no-repeat 50% 10em;
-	margin: 1em auto;
+	margin: 0 auto;
 	max-width: 940px;
-	min-height: 95%;
+	min-height: 100%;
 	position: relative;
 	
      -moz-border-radius: 1em; 
@@ -226,6 +231,7 @@ footer {
 	background: #444;
 	bottom: 0;
 	color: #ddd;
+	overflow: hidden;
 	position: absolute;
 	width: 100%;
      -moz-border-radius: 0 0 1em 1em; 
