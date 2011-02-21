@@ -111,12 +111,11 @@ button {  width: auto; overflow: visible; }
 /* overall look & feel */
 
 body {
-	background-color: #191970;
+	background-color: #000033;
 	background-position: center center;
-	background-image: radial-gradient(center 45deg, circle closest-corner, #6666FF 0%, #191970 100%);
-	background-image: -moz-radial-gradient(#6666FF, #191970);
-	background-image: -webkit-gradient(radial, center center, 0, center center, 600, from(#6666FF), to(#191970));
-	padding: 1em 0;
+	background-image: radial-gradient(center 45deg, circle closest-corner, #6666FF 0%, #000033 100%);
+	background-image: -moz-radial-gradient(#6666FF, #000033);
+	background-image: -webkit-gradient(radial, center center, 0, center center, 600, from(#6666FF), to(#000033));
 	visibility: hidden;
 	
 	   -moz-box-sizing: border-box;
@@ -124,8 +123,8 @@ body {
 	        box-sizing: border-box;
 }
 
-.no-borderradius body {
-	padding: 0;
+.no-cssgradients body {
+	background-color: #000033;
 }
 
 body.ready, .no-js body {
