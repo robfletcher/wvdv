@@ -278,9 +278,9 @@ section {
 /* page footer */
 
 footer {
-	background: #444;
+	background: #3D59AB;
 	bottom: 0;
-	color: #ddd;
+	color: #C1CDCD;
 	overflow: hidden;
 	position: absolute;
 	width: 100%;
@@ -299,8 +299,12 @@ footer p {
 	margin: 1em 2em;
 }
 
+footer a, footer a:active, footer a:visited {
+	color: #C1CDCD;
+}
+
 footer a:hover {
-	color: #fff;
+	color: #F0FFFF;
 }
 
 #copyright {
