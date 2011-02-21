@@ -139,10 +139,6 @@ h2 {
 #container {
 	background: #fff url(../images/logo-bg.png) no-repeat -10% 90%;
 	
-     -moz-border-radius: 1em; 
-  -webkit-border-radius: 1em; 
-          border-radius: 1em; 
-
      -moz-box-shadow: 0px 0px 0.5em #000033; 
   -webkit-box-shadow: 0px 0px 0.5em #000033; 
           box-shadow: 0px 0px 0.5em #000033; 
@@ -156,6 +152,28 @@ h2 {
 
 .ie6 #container {
 	background-image: url(../images/logo-bg.gif);
+}
+
+nav,
+footer {
+	color: #C1CDCD;
+
+  background-color: #3D59AB;
+  background-image: -moz-linear-gradient(top, #3D59AB, #191970); 
+  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #3D59AB),color-stop(1, #191970)); 
+  background-image: -webkit-linear-gradient(#3D59AB, #191970); 
+  background-image: linear-gradient(top, #3D59AB, #191970);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#3D59AB', EndColorStr='#191970'); 
+}
+
+nav a, nav a:active, nav a:visited,
+footer a, footer a:active, footer a:visited {
+	color: #C1CDCD;
+}
+
+nav a:hover,
+footer a:hover {
+	color: #F0FFFF;
 }
 
 /* layout grid */
@@ -233,6 +251,29 @@ header h2 {
 	text-align: right;
 }
 
+/* navigation bar */
+
+nav {
+	margin: 0.5em 0 0;
+	overflow: hidden;
+	padding: 1em 2em;
+	zoom: 1;
+}
+
+nav a {
+	display: block;
+	float: left;
+	font-size: 1.2307em;
+	margin-right: 1em;
+	padding: 0 0.5em;
+	text-decoration: none;
+    text-shadow: 0 0 1em #C1CDCD; 
+}
+
+nav a:hover {
+	text-shadow: 0 0 0.5em #F0FFFF; 
+}
+
 /* main body */
 
 p {
@@ -277,15 +318,10 @@ section {
 /* page footer */
 
 footer {
-	background: #3D59AB;
 	bottom: 0;
-	color: #C1CDCD;
 	overflow: hidden;
 	position: absolute;
 	width: 100%;
-     -moz-border-radius: 0 0 1em 1em; 
-  -webkit-border-radius: 0 0 1em 1em; 
-          border-radius: 0 0 1em 1em; 
 }
 
 .ie6 footer {
@@ -296,14 +332,6 @@ footer {
 footer p {
 	font-size: 0.92307em;
 	margin: 1em 2em;
-}
-
-footer a, footer a:active, footer a:visited {
-	color: #C1CDCD;
-}
-
-footer a:hover {
-	color: #F0FFFF;
 }
 
 #copyright {
