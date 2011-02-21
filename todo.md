@@ -1,0 +1,1 @@
+* check header on `no-fontface` browser

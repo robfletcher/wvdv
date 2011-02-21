@@ -28,13 +28,13 @@
     <header>
 		<p class="lang"><a href="af/index.html" lang="af">Wys in Afrikaans</a></p>
 		<hgroup>
-			<h1>Wilhelm van der Vyver &</h1>
+			<h1>Wilhelm van der Vyver &amp;</h1>
 			<h2><span lang="af">Assosiate</span><br><span lang="en">Associates</span></h2>
 		</hgroup>
     </header>
     
-    <div id="main" role="main">
-		<div class="main-column">
+    <div class="column-container">
+		<div id="main" class="column column-primary" role="main">
 			<section id="preamble">
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sit amet diam quis ipsum fermentum ultricies. Vestibulum velit purus, rutrum eget iaculis non, ultrices ut leo. Pellentesque facilisis velit non augue aliquam et suscipit velit accumsan.</p>
 				<p>Mauris quis risus non ipsum congue egestas sed nec sapien. Nunc congue consectetur nibh quis bibendum. Nunc in urna nisl, ac aliquet dui. Aenean turpis enim, elementum in posuere id, ullamcorper ac ligula. Nulla tristique porttitor iaculis. Fusce ultricies pharetra ipsum sed condimentum. Vestibulum sed ipsum quis ligula ornare eleifend bibendum eu justo.</p>
@@ -52,17 +52,19 @@
 				</ul>
 			</section>
 		</div>
-		<div class="sidebar">
+		<div id="sidebar" class="column column-secondary" role="complementary">
 			<section id="contact">
 				<div class="vcard">
+					<p class="fn org visuallyhidden">Wilhelm van der Vyver &amp; Associates</p>
 					<p class="adr">
 						<span class="street-address">10 Cathcart Street</span>
-						<span class="po-box">P.O. Box 164</span>
-						<span class="region">Aberdeen</span>
+						<span class="post-office-box">P.O. Box 164</span>
+						<span class="locality">Aberdeen</span>
 						<span class="postal-code">6270</span>
+						<span class="geo"></span>
 					</p>
-					<p class="tel">Tel: 049 846 0116</p>
-					<p class="tel">Fax: 086 548 4541</p>
+					<p>Tel: <span class="tel">049 846 0116</span></p>
+					<p class="tel"><span class="type">Fax</span>: <span>086 548 4541</span></p>
 					<p class="email"><a href="mailto:wilhelm@aberdeenec.com">wilhelm@aberdeenec.com</a></p>
 				</div>
 			</section>
