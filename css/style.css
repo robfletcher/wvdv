@@ -243,14 +243,6 @@ section {
 }
 
 /* right column */
-#sidebar {
-	background: #b6b6cc;
-	margin-top: 2em;
-     -moz-border-radius: 1em 0 0 1em; 
-  -webkit-border-radius: 1em 0 0 1em; 
-          border-radius: 1em 0 0 1em; 
-}
-
 #contact {
 	font-size: 1.2307em;
 }
