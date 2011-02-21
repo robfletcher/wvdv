@@ -214,7 +214,7 @@ header h1 {
 header h2 {
 	font-family: 'DejaVuSansBook';
 	font-size: 1.6em;
-	line-height: 0.95;
+	line-height: 0.9;
 	margin: 0;
 }
 
@@ -265,6 +265,10 @@ section {
 	clip: rect(1px 1px 1px 1px);
 }
 
+#contact .label {
+	font-style: italic;
+}
+
 #contact .adr span {
 	display: block;
 }
@@ -288,9 +292,14 @@ footer p {
 	margin: 1em 2em;
 }
 
+footer a:hover {
+	color: #fff;
+}
+
 #copyright {
 	float: left;
 }
+
 #credit {
 	float: right;
 }
