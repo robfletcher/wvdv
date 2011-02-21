@@ -114,14 +114,17 @@ body {
 	background-color: #191970;
 	background-position: center center;
 	background-image: radial-gradient(center 45deg, circle closest-corner, #6666FF 0%, #191970 100%);
-	background-image: -moz-radial-gradient(center 45deg, circle closest-corner, #6666FF 0%, #191970 100%);
-	background-image: -webkit-gradient(radial, center center, 125, center center, 250, from(#6666FF), to(#191970));
-	padding: 1em 0;
+	background-image: -moz-radial-gradient(#6666FF, #191970);
+	background-image: -webkit-gradient(radial, center center, 0, center center, 600, from(#6666FF), to(#191970));
 	visibility: hidden;
 	
 	   -moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
+}
+
+.borderradius body {
+	padding: 1em 0;
 }
 
 body.ready, .no-js body {
@@ -146,7 +149,13 @@ h2 {
 }
 
 .no-boxshadow #container {
-	border: 0.25em solid #000033;
+	border-color: #000033;
+	border-style: solid;
+	border-width: 0 0.25em;
+}
+
+.ie6 #container {
+	background-image: url(../images/logo-bg.gif);
 }
 
 /* layout grid */
@@ -277,6 +286,11 @@ footer {
      -moz-border-radius: 0 0 1em 1em; 
   -webkit-border-radius: 0 0 1em 1em; 
           border-radius: 0 0 1em 1em; 
+}
+
+.ie6 footer {
+	border-bottom: 2px solid #000033;
+	position: static;
 }
 
 footer p {
