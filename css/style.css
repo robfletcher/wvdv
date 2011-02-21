@@ -301,9 +301,9 @@ footer p {
 	  -webkit-border-radius: 0; 
 	          border-radius: 0; 
 
-	     -moz-box-shadow: 0px 0px 0.5em #000033; 
-	  -webkit-box-shadow: 0px 0px 0.5em #000033; 
-	          box-shadow: 0px 0px 0.5em #000033; 
+	     -moz-box-shadow: none; 
+	  -webkit-box-shadow: none; 
+	          box-shadow: none; 
 	}
 	
 	header {
@@ -318,7 +318,7 @@ footer p {
 		margin-bottom: 0;
 	}
   
-	.main-column, .sidebar {
+	.column {
 		float: none;
 		width: auto;
 	}
@@ -332,7 +332,7 @@ footer p {
 		padding: 1em;
 	}
 	
-	#contact, footer {
+	#sidebar, footer {
 	     -moz-border-radius: 0; 
 	  -webkit-border-radius: 0; 
 	          border-radius: 0; 
