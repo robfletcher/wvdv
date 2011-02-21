@@ -242,13 +242,14 @@ section {
 
 /* right column */
 #contact {
-	background: #ccc;
+	background: #b6b6cc;
 	padding: 1em;
+     -moz-border-radius: 1em; 
+  -webkit-border-radius: 1em; 
+          border-radius: 1em; 
 }
 
-#contact .street-address,
-#contact .region,
-#contact .postal-code {
+#contact .adr span {
 	display: block;
 }
 
@@ -288,9 +289,13 @@ footer p {
 }
 
 @media screen and (max-width: 480px) {
+	body {
+		padding: 0;
+	}
+	
 	#container {
-		margin: 0;
-
+		background-position: 50% 16em;
+		
 	     -moz-border-radius: 0; 
 	  -webkit-border-radius: 0; 
 	          border-radius: 0; 
@@ -300,8 +305,16 @@ footer p {
 	          box-shadow: 0px 0px 0.5em #000033; 
 	}
 	
+	header {
+		padding: 0 1em;
+	}
+	
 	header hgroup {
 		margin: 0 auto;
+	}
+	
+	#main {
+		margin-bottom: 0;
 	}
   
 	.main-column, .sidebar {
@@ -309,10 +322,23 @@ footer p {
 		width: auto;
 	}
 	
-	footer {
+	section {
+		margin: 2em 1em;
+	}
+	
+	#contact {
+		margin: 0;
+		padding: 1em;
+	}
+	
+	#contact, footer {
 	     -moz-border-radius: 0; 
 	  -webkit-border-radius: 0; 
 	          border-radius: 0; 
+	}
+	
+	footer {
+		position: static;
 	}
 	
 	#copyright, #credit {
