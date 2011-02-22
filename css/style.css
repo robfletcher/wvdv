@@ -124,7 +124,7 @@ body {
 }
 
 .no-cssgradients body {
-	background-color: #000033;
+	background-color: #191970;
 }
 
 body.ready, .no-js body {
@@ -133,15 +133,15 @@ body.ready, .no-js body {
 
 h2 {
 	font-family: 'DejaVuSansBook';
-	margin: 1em 0 0.5em;
+	margin-bottom: 0.5em;
 }
 
 #container {
 	background: #fff url(../images/logo-bg.png) no-repeat -10% 90%;
 	
-     -moz-box-shadow: 0px 0px 0.5em #000033; 
-  -webkit-box-shadow: 0px 0px 0.5em #000033; 
-          box-shadow: 0px 0px 0.5em #000033; 
+     -moz-box-shadow: 0 -0.5em 0.5em #000033; 
+  -webkit-box-shadow: 0 0 0.5em #000033; 
+          box-shadow: 0 0 0.5em #000033; 
 }
 
 .no-boxshadow #container {
@@ -191,6 +191,7 @@ html, body {
 }
 
 .ie6 #container {
+	height: 100%;
 	width: 960px;
 }
 
@@ -281,7 +282,7 @@ p {
 }
 
 section {
-	margin: 2em;
+	margin: 1.5em 2em 2em;
 }
 
 #services h2 {
@@ -319,14 +320,10 @@ section {
 
 footer {
 	bottom: 0;
+	left: 0;
 	overflow: hidden;
 	position: absolute;
 	width: 100%;
-}
-
-.ie6 footer {
-	border-bottom: 2px solid #000033;
-	position: static;
 }
 
 footer p {
@@ -342,6 +339,10 @@ footer p {
 	float: right;
 }
 
+.ie6 footer p {
+	display: inline; /* prevent float-double-margin */
+}
+
 
 @media all and (orientation:portrait) { 
   
@@ -352,26 +353,11 @@ footer p {
 }
 
 @media screen and (max-width: 960px) {
-	body {
-		padding: 0;
-	}
-	
 	#container {
-	     -moz-border-radius: 0; 
-	  -webkit-border-radius: 0; 
-	          border-radius: 0; 
-
 	     -moz-box-shadow: none; 
 	  -webkit-box-shadow: none; 
 	          box-shadow: none; 
 	}
-
-	footer {
-	     -moz-border-radius: 0; 
-	  -webkit-border-radius: 0; 
-	          border-radius: 0; 
-	}
-	
 }
 
 @media screen and (max-width: 480px) {
