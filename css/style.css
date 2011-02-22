@@ -158,12 +158,12 @@ nav,
 footer {
 	color: #C1CDCD;
 
-  background-color: #000000;
-  background-image: -moz-linear-gradient(top, #000000, #3a3a3a); 
-  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #000000),color-stop(1, #3a3a3a)); 
-  background-image: -webkit-linear-gradient(#000000, #3a3a3a); 
-  background-image: linear-gradient(top, #000000, #3a3a3a);
-            filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#000000', EndColorStr='#3a3a3a'); 
+  background-color: #22316C;
+  background-image: -moz-linear-gradient(top, #22316C, #000033); 
+  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #22316C),color-stop(1, #000033)); 
+  background-image: -webkit-linear-gradient(#22316C, #000033); 
+  background-image: linear-gradient(top, #22316C, #000033);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#22316C', EndColorStr='#000033'); 
 }
 
 nav a, nav a:active, nav a:visited,
@@ -218,14 +218,15 @@ html, body {
 /* header */
 
 header {
-	color: #191970;
+	color: #22316C;
+	margin: 2em 0 1.5em;
 	padding: 0 2em;
 }
 
 header h1, header h2 {
 	display: inline-block;
 	line-height: 1;
-    text-shadow: 1px 1px 3px #aad;
+    text-shadow: 1px 1px 3px #000033;
 }
 
 .ie6 header h1, .ie6 header h2, .ie7 header h1, .ie7 header h2 {
@@ -248,9 +249,10 @@ header h2 {
 }
 
 .lang {
-	margin-bottom: 0.5em;
-	padding-top: 0.5em;
-	text-align: right;
+	margin-top: 0.5em;
+	position: absolute;
+	right: 1em;
+	top: 0.25em;
 }
 
 /* navigation bar */
