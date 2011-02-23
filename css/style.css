@@ -123,6 +123,10 @@ body {
 	        box-sizing: border-box;
 }
 
+.ie8 body {
+	padding-right: 1px; /* fixes a glitch in IE8 where a 1px white border is rendered on the right of these elements */
+}
+
 .no-cssgradients body {
 	background-color: #191970;
 }
@@ -151,7 +155,7 @@ h2 {
 }
 
 .ie6 #container {
-	background-image: url(../images/logo-bg.gif);
+	background-image: none;
 }
 
 nav,

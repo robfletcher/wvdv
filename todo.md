@@ -6,3 +6,4 @@
 * footer doesn't anchor to bottom properly in IE6
 * fonts
 * licences (html5boilerplate, fonts)
+* use build script to concat & minify
