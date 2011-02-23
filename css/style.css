@@ -226,7 +226,7 @@ header {
 header h1, header h2 {
 	display: inline-block;
 	line-height: 1;
-    text-shadow: 1px 1px 3px #000033;
+    text-shadow: 2px 2px 4px #999;
 }
 
 .ie6 header h1, .ie6 header h2, .ie7 header h1, .ie7 header h2 {
